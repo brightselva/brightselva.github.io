@@ -2,7 +2,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 
 app.controller("controller", ['$scope', function($scope) {
     $scope.item = {
-        "mainimg" : "../assets/explore-business.jpg",
+        "mainimg" : "explore-business.jpg",
         "navhome" : "HOME",
         "navabout" : "ABOUT",
         "navportfolio" : "PORTFOLIO",
@@ -15,13 +15,13 @@ app.controller("controller", ['$scope', function($scope) {
         "title3" : "Buisness Registration platform.",
         "card1title" : "Experienced Team",
         "card1content" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "card1img" : "../assets/explore-business.jpg",
+        "card1img" : "explore-business.jpg",
         "card2title" : "Investment",
         "card2content" : "Some quick example text to build on the card title and make up the bulk of the card's content. Some more quick example text for the card's content.",
-        "card2img" : "../assets/investment.jpg",
+        "card2img" : "investment.jpg",
         "card3title" : "Trading",
         "card3content" : "Some quick example text to make up the bulk of the card's content.",
-        "card3img" : "../assets/trading.jpg",
+        "card3img" : "trading.jpg",
         "travel" : "Travel",
         "learning" : "Learning",
         "entertainment" : "Entertainment",
