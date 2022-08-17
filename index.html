@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" class="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" class="stylesheet">
+    <title>Angular JS</title>
+</head>
+<body ng-app="myApp" style="background-color: gray;" ng-controller="controller">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" href="#!"><h2 style="font-weight: lighter;">Podium</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#!">{{item.navhome}}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!search">{{item.navsearch}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!about">{{item.navabout}}</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!portfolio">{{item.navportfolio}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!features">{{item.navfeatures}}</a>
+            </li>
+          </ul>
+          <a href="#!signup">
+          <button class="btn btn-outline-info">{{item.navsignup}}</button>
+        </a>
+        </div>
+      </nav>
+    
+
+
+<ng-view></ng-view>
+<!-- <div ng-view></div> -->
+
+<footer class="bg-white mt-4">
+    <div class="container py-5">
+      <div class="row py-3">
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">About</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">About Us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Stories</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Help</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Payments</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Shipping</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Cancellation</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Returns</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Return Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Terms Of Use</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Security</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Sitemap</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Registered Office Address</h6>
+          <p class="text-muted mb-4">Here , write the complete address of the Registered office address along with telephone number.</p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab  fa-2x fa-twitter" style="color: grey;font-size: 25px;"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-2x fa-facebook-f" style="color: grey;font-size: 25px;"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-2x fa-instagram" style="color: grey;font-size: 25px;"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fab fa-2x fa-youtube" style="color: grey;font-size: 25px;"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fab fa-2x fa-google" style="color: grey;font-size: 25px;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="p-0 m-0 b-0">
+
+   
+    <div class="bg-light py-2">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">&copy; 2022 Bootstrap All risghts reserved.</p>
+        
+        </div>
+      </div>
+    
+  </footer>
+ <script src="../js/main.js"></script>
+ <script src="../js/data.js"></script>
+</body>
+</html>
